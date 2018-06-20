@@ -1,0 +1,14 @@
+{
+  "name": "Flyin_High",
+  "title": "Flyin_High",
+  "description": "Flyin High. custom version of the Zenburn theme, lovely modified from a very esigent italian programmer.",
+  "homepage": "",
+  "version": "1.0.0",
+  "author": "icaras12x <ale12manto@live.it>",
+  "license": "MIT",
+  "theme": {
+    "file": "flyinhigh.less",
+    "dark": true
+  },
+  "keywords": ["theme"]
+}

@@ -1,0 +1,111 @@
+@background: #343434;
+@foreground: #f6f3e8;
+
+/* Code Styling */
+
+.CodeMirror, .CodeMirror-scroll {
+  background-color: @background;
+  color: @foreground;
+
+}
+
+.CodeMirror-focused .CodeMirror-activeline-background {
+  background: #505050;
+}
+&.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
+  box-shadow: inset 15px 0 0 0 #000;
+}
+
+.CodeMirror-focused .CodeMirror-activeline {
+  .CodeMirror-gutter-elt {
+    background: #505050;
+    color: #fff;
+  }
+  .inline-widget .CodeMirror-gutter-elt {
+    color: #767676;
+  }
+}
+// css valore
+.cm-atom{color:#d07f81}
+// html attributo tipo class, id, href, ecc.
+.cm-attribute{color:#a5d9db}
+// html stringa che definiscei valori qui sopra^
+.cm-string{color:#C89191}
+// js attributo var function ecc
+.cm-def{color:#8ACCCF}
+.cm-hr {color: #d68686}
+//numero
+.cm-number{color: #8ACCCF}
+//css proprietà
+.cm-property {color: #d6d6d6}
+.cm-operator{color:#ffd9b3}
+// css @qualcosa e js value
+.cm-variable-2{color:#dcdf99}
+.cm-meta{color:#39b4b4}
+// css :hover e altri
+.cm-variable, .cm-variable-3,.cm-bracket {color: @foreground;}
+// commento
+.cm-comment {color: #7F9F7F}
+.cm-error, .cm-minus {color: #ff0089}
+.cm-header {color: #d85896}
+.cm-link {color: #b77fdb; text-decoration: none;}
+.cm-rangeinfo {color: #6c71c4}
+//colori tipo css bianco, rosso ecc e js var
+.cm-keyword{color: #ffd9b3}
+// css id selector
+.cm-builtin, .cm-quote {color: #D6D7AF}
+// css tag
+.cm-qualifier{color:#dbb78c}
+// html tag tipo div e css body, a, img, ecc selectors
+.cm-tag{color:#ffd9b3}
+
+
+/* Extra CSS */
+
+.CodeMirror.find-highlighting div.CodeMirror-selected,
+.CodeMirror .CodeMirror.find-highlighting div.CodeMirror-selected {
+  background: red;
+}
+
+.CodeMirror-cursor {
+  border-left: 1px solid #fff;
+}
+
+.CodeMirror-gutters {
+  background-color: @background;
+  border-right: none;
+}
+
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+  color: #c0c0c0;
+}
+
+.CodeMirror .CodeMirror-selected {
+  background: #333f48;
+}
+.CodeMirror-focused .CodeMirror-selected {
+  background: #6d6d6d;
+}
+
+.CodeMirror-matchingbracket, .CodeMirror-matchingtag {
+  /* Ensure visibility against gray inline editor background */
+  background-color: #7b7b7b;
+
+  color: @foreground !important;
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+  border-left: none !important;
+  border-bottom: 1px solid #fff;
+}
+
+/* Non-editor styling */
+
+#image-holder,
+#not-editor {
+  background-color: @background;
+}
+
+#image-holder {
+  color: @foreground;
+}
